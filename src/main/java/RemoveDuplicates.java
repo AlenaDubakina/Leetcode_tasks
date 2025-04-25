@@ -9,12 +9,14 @@ public class RemoveDuplicates {
         int[] uniqueArr = new int[nums.length];
         uniqueArr[0] = nums[0];
         int count = 1;
+
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] != uniqueArr[count - 1]) {
                 uniqueArr[count] = nums[i];
                 count++;
             }
         }
+
         for (int i = 0; i < nums.length; i++) {
             nums[i] = uniqueArr[i];
         }

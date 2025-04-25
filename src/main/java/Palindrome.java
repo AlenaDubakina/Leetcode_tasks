@@ -8,6 +8,7 @@ public class Palindrome {
         StringBuilder builder = new StringBuilder("" + x);
         builder.reverse();
         String str = builder.toString();
+
         if (str.equals("" + x)) {
             return true;
         } else {
