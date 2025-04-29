@@ -1,5 +1,6 @@
 public class FindFirstIndex {
-    /* Для двух строк needle и haystack вернуть индекс первого вхождения needle в haystack,
+    /*
+    Для двух строк needle и haystack вернуть индекс первого вхождения needle в haystack,
     или , -1 если needle не является частью haystack.
      */
 
