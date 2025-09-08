@@ -17,7 +17,10 @@ public class FrequencySort {
             listMap.put(s.charAt(i), listMap.getOrDefault(s.charAt(i), 0) + 1);
         }
 
-        Map<Character, Integer> sortedMap = listMap.entrySet().stream().sorted(Map.Entry.comparingByValue()).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+        Map<Character, Integer> sortedMap = listMap.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue())
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
 
         for (Map.Entry<Character, Integer> entry : sortedMap.entrySet()) {
             for (int i = 0; i < entry.getValue(); i++) {
