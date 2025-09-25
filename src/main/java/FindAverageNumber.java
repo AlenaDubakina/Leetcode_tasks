@@ -1,3 +1,7 @@
+/*
+Найти среднее значение чисел
+ */
+
 import java.util.Arrays;
 import java.util.List;
 
