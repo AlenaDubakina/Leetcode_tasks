@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class IsReverseString {
     /*
     Напишите функцию, которая переворачивает строку.
