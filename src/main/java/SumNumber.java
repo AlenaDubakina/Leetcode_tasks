@@ -21,8 +21,15 @@ public class SumNumber {
         return number % 10 + sumNumber(number / 10);
     }
 
+    public static Integer sumNumberAbs1(int num) {
+        num = Math.abs(num);
+
+        return num < 10 ? num : num % 10 + sumNumberAbs1(num / 10);
+    }
+
     public static void main(String[] args) {
         System.out.println(sumNumber(234));
         System.out.println(sumNumberAbs(234));
+        System.out.println(sumNumberAbs1(234));
     }
 }
